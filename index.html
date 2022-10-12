@@ -10,28 +10,30 @@
 <body>
     <p id="login"></p>
 <p ID="wel">Welcome to To Do list!!</p>
-<form action="/dogs" id="dog">
+<form action="#" >
     <label for="todo"></label>
     <input type="text" name="todo" id="todo" required>
-  <button id="add">Add</button>
+  <button id="add" onclick="myfunction();myfunction1()">Add</button>
 
 <div class="a1">
   <input type="date" id="datePicker" value="" required>
   <input type="time" id="timePicker" value="" required>
 </div>
 </form>
-<div class="taskName">
-  <h2 id="lists">Things to Do : </h2>
-  <ul id="task">
-  <li>Add me a task</li>
-  </ul>
-</div>
-<!--<div class="todaytask">
-  <h2 id="todays">Today's Task</h2>
-  <ul id="things">
-  </ul>
-</div>-->
-<div id="clock"></div>
+<h1 id = "topic">To-Do List</h1>
+   
+    <h2 class = "titletoday">Today's task</h2>
+
+<ul id="list" position :absolute left:600px > </ul>
+<ul id="completed"></ul>
+
+<audio id="mouse">
+    <source src="mouseclick.wav" type="audio/wav">          
+  </audio>
+  <audio id="mousedelete">
+    <source src="delete.wav" type="audio/wav">          
+  </audio>
+<!--<div id="clock"></div>-->
 
     <script src="app.js"></script>
 </body>
